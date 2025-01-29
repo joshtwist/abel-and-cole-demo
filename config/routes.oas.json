@@ -31,6 +31,27 @@
         },
         "operationId": "beeef998-5d87-4877-9aca-6406e923d794"
       }
+    },
+    "/add": {
+      "x-zuplo-path": {
+        "pathMode": "open-api"
+      },
+      "get": {
+        "summary": "Adder",
+        "description": "",
+        "x-zuplo-route": {
+          "corsPolicy": "none",
+          "handler": {
+            "export": "default",
+            "module": "$import(./modules/hello-world)",
+            "options": {}
+          },
+          "policies": {
+            "inbound": []
+          }
+        },
+        "operationId": "ae3d3ece-705f-4c3f-ac64-74577fcb306b"
+      }
     }
   }
 }
